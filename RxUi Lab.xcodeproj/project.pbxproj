@@ -6,6 +6,12 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		626C98E62F65DBC700184DD0 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = 626C98E52F65DBC700184DD0 /* RxCocoa */; };
+		626C98EA2F65DBC700184DD0 /* RxRelay in Frameworks */ = {isa = PBXBuildFile; productRef = 626C98E92F65DBC700184DD0 /* RxRelay */; };
+		626C98EC2F65DBC700184DD0 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 626C98EB2F65DBC700184DD0 /* RxSwift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		626C98C22F65D90F00184DD0 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -22,6 +28,19 @@
 			remoteInfo = "RxUi Lab";
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		626C98F02F65E05400184DD0 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		626C98AB2F65D90E00184DD0 /* RxUi Lab.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "RxUi Lab.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -65,6 +84,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				626C98E62F65DBC700184DD0 /* RxCocoa in Frameworks */,
+				626C98EC2F65DBC700184DD0 /* RxSwift in Frameworks */,
+				626C98EA2F65DBC700184DD0 /* RxRelay in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -115,6 +137,7 @@
 				626C98A72F65D90E00184DD0 /* Sources */,
 				626C98A82F65D90E00184DD0 /* Frameworks */,
 				626C98A92F65D90E00184DD0 /* Resources */,
+				626C98F02F65E05400184DD0 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -125,6 +148,9 @@
 			);
 			name = "RxUi Lab";
 			packageProductDependencies = (
+				626C98E52F65DBC700184DD0 /* RxCocoa */,
+				626C98E92F65DBC700184DD0 /* RxRelay */,
+				626C98EB2F65DBC700184DD0 /* RxSwift */,
 			);
 			productName = "RxUi Lab";
 			productReference = 626C98AB2F65D90E00184DD0 /* RxUi Lab.app */;
@@ -208,6 +234,9 @@
 			);
 			mainGroup = 626C98A22F65D90E00184DD0;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				626C98E22F65DBC700184DD0 /* XCRemoteSwiftPackageReference "RxSwift" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 626C98AC2F65D90E00184DD0 /* Products */;
 			projectDirPath = "";
@@ -591,6 +620,35 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		626C98E22F65DBC700184DD0 /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactiveX/RxSwift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.10.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		626C98E52F65DBC700184DD0 /* RxCocoa */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 626C98E22F65DBC700184DD0 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxCocoa;
+		};
+		626C98E92F65DBC700184DD0 /* RxRelay */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 626C98E22F65DBC700184DD0 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxRelay;
+		};
+		626C98EB2F65DBC700184DD0 /* RxSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 626C98E22F65DBC700184DD0 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 626C98A32F65D90E00184DD0 /* Project object */;
 }
